@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesek</title>
+    <style>
+    
+    canvas{
+        border: 2px solid orange;
+    }
+
+    </style>
+</head>
+<body>
+    <canvas width="300" height="300" id = lisek>
+    </canvas>
+    <script>
+        let canvas = document.getElementById('lisek');
+        let lisek = canvas.getContext('2d');
+
+    try{
+        lisek.FillStyle = 'black';
+        lisek.beginPath();
+
+            lisek.moveTo(75,25);
+            lisek.lineTo(75,75);
+            lisek.lineTo(85,75);
+            lisek.lineTo(85,25);
+
+            lisek.moveTo(85,75);
+            lisek.lineTo(85,100);
+            lisek.lineTo(93,100);
+            lisek.lineTo(93,75);
+
+            lisek.moveTo(75,100);
+            lisek.lineTo(75,150);
+            lisek.lineTo(93,150);
+            lisek.lineTo(93,140);
+            lisek.lineTo(85,140);
+            lisek.lineTo(85,100);
+
+            lisek.moveTo(65,150);
+            lisek.lineTo(105,150);
+            lisek.lineTo(105,160);
+            lisek.lineTo(65,160);
+
+            lisek.moveTo(65,160);
+            lisek.lineTo(65,220);
+            lisek.lineTo(75,220);
+            lisek.lineTo(75,160);
+
+            lisek.moveTo(75,220);
+            lisek.lineTo(75,240);
+            lisek.lineTo(85,240);
+            lisek.lineTo(85,220);
+            lisek.closePath();
+
+            lisek.moveTo(85,240);
+            lisek.lineTo(85,250);
+            lisek.lineTo(95,250);
+            lisek.lineTo(95,240);
+
+            
+
+
+        lisek.closePath();
+        lisek.stroke(); //отрисовка
+        //lisek.fill(); // заливка
+
+        
+    }catch(eb){
+        alert("Error: " + eb.name + " : " + eb.message);
+    }
+    </script>
+</body>
+</html>
