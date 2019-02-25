@@ -1,0 +1,263 @@
+@font-face{
+    font-family: "Roboto";
+    src:url("/fonts/roboto.woff") format(woff),
+        url("/fonts/roboto.woff2") format(woff2);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src:url("/fonts/robotomedium.woff") format(woff),
+        url("/fonts/robotomedium.woff2") format(woff2);
+        font-weight: 600;
+}
+@font-face{
+    font-family: "Roboto";
+    src:url("/fonts/robotobold.woff") format(woff),
+        url("/fonts/robotobold.woff2") format(woff2);
+        font-weight: 700;
+}
+/*-----------------Общие стили------------------- */
+
+:root{
+    --grey-text: #283136;
+    --red:#fb565a;
+    --green: #00cc66;
+    --yellow: #ffcc33;
+    --hover-red: #e74246;
+    --hover-green: #00bc6c;
+    --hover-yellow: #eab534;
+    --active-red: #d7373b;
+    --active-green: #00aa62;
+    --active-yellow: #e5a722;
+}
+
+.button-red{
+    background: var(--red);
+}
+
+.button-green{
+    background: var(--green);
+}
+
+.button-yellow{
+    background: var(--yellow);
+}
+
+.button-red:hover{
+    background: var(--hover-red);
+}
+
+.button-red:active{
+    background: var(--active-red);
+    color: rgba(255,255,255,0.2);
+    /*TO DO подводку по верхнему краю цвета*/
+}
+
+.button-green:hover{
+    background: var(--hover-green);
+}
+
+.button-green:active{
+    background: var(--active-green);
+    color: rgba(255,255,255,0.2);
+    /*TO DO подводку по верхнему краю цвета*/
+}
+
+.button-yellow:hover{
+    background: var(--hover-yellow);
+}
+
+.button-yellow:active{
+    background: var(--active-yellow);
+    color: rgba(255,255,255,0.2);
+    /*TO DO подводку по верхнему краю цвета */
+}
+
+.button{
+    border:none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    width: 160px;
+    height: 50px;
+}
+
+hr{
+    background: #eeeeee;
+    opacity: 0.2;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto','TimesNewRoman',sans-serif;
+}
+
+/*----------------- Навигация ------------------- */
+
+.main-header{
+    background-color:#e2e2e2;
+}
+
+.navigation-list{
+    list-style: none;
+}
+
+.logo-list{  /*TO DO Починить верхний маргин*/
+    margin-top:0px;
+}
+
+.main-logo > img:hover{
+    opacity: 0.7;
+}
+
+.main-logo > img:active{
+    opacity: 0.3;
+}
+
+.navigation-item > a{
+    font-size: 16px;
+    line-height:30px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: #000;
+
+    text-decoration: none;
+}
+
+.navigation-item > a:hover{
+    color: #fb565a;
+}
+
+.navigation-item > a:active{
+    color: #000;
+    opacity: 0.2;
+}
+
+/*-----------------Слайдер------------------- */
+
+.slider{
+    list-style: none;
+}
+
+.slider-item > h1{
+    font-size: 55px;
+    line-height:60px;
+    font-weight: 600;
+
+    color: #000;
+
+    text-decoration: none;
+}
+
+.slider-item > p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--grey-text);
+}
+
+.advantage-button{
+    width: 240px;
+    height: 50px;
+}
+
+/*Продукция*/
+
+.product-list{
+    list-style: none;
+}
+
+.product-item > h2{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-item > p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--grey-text);
+}
+
+/*-----------------О нас------------------- */
+
+.summary > h3{
+    font-size:45px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.summary > p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.order-type-list{
+    list-style: none;
+}
+
+.order-type-list > h2{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#000;
+}
+
+.order-type-item{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--grey-text);
+}
+/*---------------Статистика--------------------*/
+
+.statistic > h4{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.procent{
+    font-weight: 700;
+    font-size:45px;
+}
+sup{
+    font-size:25px;
+}
+
+.lvl{
+    font-size:16px;
+    line-height: 18px;
+}
+
+/*-------------Партнеры----------------------*/
+
+.partners-list{
+    list-style: none;
+}
+
+.partners-item{
+    opacity: 0.2;
+}
+
+.partners-item:hover{
+    opacity: 1;
+}
+
+.partners-item:active{
+    opacity: 0.2;
+}
