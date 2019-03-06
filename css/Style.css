@@ -30,9 +30,6 @@
     --active-red: #d7373b;
     --active-green: #00aa62;
     --active-yellow: #e5a722;
-    --shadow-red: #c13135;
-    --shadow-green: #009966;
-    --shadow-yellow: #ce961f;
 }
 
 .button-red{
@@ -54,7 +51,7 @@
 .button-red:active{
     background: var(--active-red);
     color: rgba(255,255,255,0.2);
-    box-shadow: inset 0px 3px var(--shadow-red);
+    /*TO DO подводку по верхнему краю цвета*/
 }
 
 .button-green:hover{
@@ -64,7 +61,7 @@
 .button-green:active{
     background: var(--active-green);
     color: rgba(255,255,255,0.2);
-    box-shadow: inset 0px 3px var(--shadow-green);
+    /*TO DO подводку по верхнему краю цвета*/
 }
 
 .button-yellow:hover{
@@ -73,8 +70,8 @@
 
 .button-yellow:active{
     background: var(--active-yellow);
-    color: rgba(255,255,255,0.2);    
-    box-shadow: inset 0px 3px var(--shadow-yellow);
+    color: rgba(255,255,255,0.2);
+    /*TO DO подводку по верхнему краю цвета */
 }
 
 .button{
@@ -101,7 +98,6 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto','TimesNewRoman',sans-serif;
-    background: #fff;
 }
 
 /*----------------- Навигация ------------------- */
@@ -112,6 +108,10 @@ body{
 
 .navigation-list{
     list-style: none;
+}
+
+.logo-list{  /*TO DO Починить верхний маргин*/
+    margin-top:0px;
 }
 
 .main-logo > img:hover{
@@ -260,61 +260,4 @@ sup{
 
 .partners-item:active{
     opacity: 0.2;
-}
-
-/*------Местоположение-------*/
-.our-location{
-    background: #fff;
-}
-
-.address > p{
-    font-size:16px;
-    line-height:18px;
-    font-weight:400;
-    color:#666;
-}
-
-.address > h3{
-    font-size:16px;
-    line-height:30px;
-    font-weight:700;
-    text-transform: uppercase;
-}
-
-/*------Футер-----------*/
-
-.social-list{
-    list-style:none;
-}
-
-.social-item > a{
-    background-image: url(/img/svg/social-bg.jpg);
-    background:#000;
-}
-
-.social > h4{
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.social > p{
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-}
-
-/*----------feedback форма-------*/
-
-.modal-title{
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 600;
-}
-
-.modal-form > label{
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
 }
