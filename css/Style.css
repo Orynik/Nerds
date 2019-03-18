@@ -19,10 +19,6 @@
 }
 /*-----------------Общие стили------------------- */
 
-.visually-hidden{
-    display: none;
-}
-
 :root{
     --grey-text: #283136;
     --red:#fb565a;
@@ -39,7 +35,6 @@
     --shadow-yellow: #ce961f;
 }
 
-/*Состояния кнопок-ссылок*/
 .button-red{
     background: var(--red);
 }
@@ -57,9 +52,8 @@
 }
 
 .button-red:active{
-    color: rgba(255,255,255,0.2);
-
     background: var(--active-red);
+    color: rgba(255,255,255,0.2);
     box-shadow: inset 0px 3px var(--shadow-red);
 }
 
@@ -68,9 +62,8 @@
 }
 
 .button-green:active{
-    color: rgba(255,255,255,0.2);
-
     background: var(--active-green);
+    color: rgba(255,255,255,0.2);
     box-shadow: inset 0px 3px var(--shadow-green);
 }
 
@@ -79,21 +72,20 @@
 }
 
 .button-yellow:active{
-    color: rgba(255,255,255,0.2);
-
     background: var(--active-yellow);
+    color: rgba(255,255,255,0.2);    
     box-shadow: inset 0px 3px var(--shadow-yellow);
 }
 
 .button{
     border:none;
     border-radius: 4px;
-
     font-size: 16px;
     line-height: 18px;
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
+
     text-align: center;
 
     width: 160px;
@@ -108,46 +100,18 @@ hr{
 body{
     margin: 0px;
     padding: 0px;
-
     font-family: 'Roboto','TimesNewRoman',sans-serif;
-
     background: #fff;
 }
 
-td{
-    padding: 5px 20px;
-}
-
 /*----------------- Навигация ------------------- */
-.wrapper{ /*Центровщик*/
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0px 20px;
-}
 
 .main-header{
     background-color:#e2e2e2;
 }
 
-.main-navigation{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.main-navigation > ul{
-    list-style: none;
-}
-
 .navigation-list{
-    margin-right: 100px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 450px;
+    list-style: none;
 }
 
 .main-logo > img:hover{
@@ -162,8 +126,10 @@ td{
     font-size: 16px;
     line-height:30px;
     font-weight: 600;
-    color: #000;
     text-transform: uppercase;
+
+    color: #000;
+
     text-decoration: none;
 }
 
@@ -176,26 +142,11 @@ td{
     opacity: 0.2;
 }
 
-.navigation-backet{
-    display: flex;
-    align-items: center;
-}
-
 /*-----------------Слайдер------------------- */
 
 .slider{
-    display: flex; 
-    height: 413px;
-
-    background-image: url(../img/index_products/slide1.png); 
-    /*Задать BG для остальных (2) слайдов*/
-    background-repeat: no-repeat;
-    background-position-x: right;
-
     list-style: none;
 }
-
-
 
 .slider-item > h1{
     font-size: 55px;
@@ -219,17 +170,9 @@ td{
     height: 50px;
 }
 
-/*-----------------------Продукция--------------*/
+/*Продукция*/
 
 .product-list{
-    margin-top: 80px;
-    margin-bottom: 80px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1100px;
-
     list-style: none;
 }
 
@@ -248,23 +191,9 @@ td{
 }
 
 /*-----------------О нас------------------- */
-.about-us{
-    padding-top: 10px;
-    padding-bottom: 50px;
-
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-}
-
-.summary{
-    padding-right: 20px;
-
-    width: 660px;
-}
 
 .summary > h3{
-    font-size:40px;
+    font-size:45px;
     line-height: 45px;
     font-weight: 600;
 }
@@ -295,30 +224,17 @@ td{
 }
 /*---------------Статистика--------------------*/
 
-.order-type-item{
-    padding-top: 13px;
-}
-
-.statistic{
-    padding-left: 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.statistic > caption > h4{
-    font-size: 18px;
+.statistic > h4{
+    font-size: 15px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .procent{
-    font-size:45px;
     font-weight: 700;
+    font-size:45px;
 }
-
 sup{
     font-size:25px;
 }
@@ -331,18 +247,7 @@ sup{
 /*-------------Партнеры----------------------*/
 
 .partners-list{
-    padding-top: 10px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-
     list-style: none;
-}
-
-.partners-list > hr{ 
-    height: 54px;
 }
 
 .partners-item{
@@ -359,20 +264,7 @@ sup{
 
 /*------Местоположение-------*/
 .our-location{
-    margin-top: 70px;
-
-    background-color: #fff;
-    background-image: url(../img/index_products/map.jpg);
-    height: 420px;
-}
-
-.address {
-    position: absolute; /* Центровка конрейнера*/
-    bottom: -1300px;
-
-    padding: 49.5px 43.5px;
-
-    background-color: #fff;
+    background: #fff;
 }
 
 .address > p{
@@ -382,59 +274,32 @@ sup{
     color:#666;
 }
 
-.address > h2{
-    margin-top: 5px;
-
-    font-size:18px;
+.address > h3{
+    font-size:16px;
     line-height:30px;
     font-weight:700;
     text-transform: uppercase;
 }
 
-.modal-call{
-    width: 200px;
-}
-
 /*------Футер-----------*/
-.social{
-    margin: 50px 0px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content:flex;
-    align-items: center;
-}
-
-
 
 .social-list{
-    margin-top: 48px;
-    margin-right: 0px;
-
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 270px;
-
     list-style:none;
 }
 
-.text-footer{
-    margin-left: 100px;
-
+.social-item > a{
+    background-image: url(/img/svg/social-bg.jpg);
+    background:#000;
 }
 
-.text-footer > h4{
-    margin-bottom: 0px;
-
+.social > h4{
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.text-footer > p{
+.social > p{
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
