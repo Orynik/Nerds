@@ -369,8 +369,7 @@ sup{
 
 .address {
     position: absolute; /* Центровка конрейнера*/
-    bottom: -1320px;
-
+    top: 1850px;
     padding: 49.5px 43.5px;
 
     background-color: #fff;
