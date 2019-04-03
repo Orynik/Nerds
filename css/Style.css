@@ -342,7 +342,8 @@ sup{
 }
 
 .partners-list > hr{ 
-    height: 54px;
+    margin: auto;
+    height: 52px;
 }
 
 .partners-item{
@@ -368,7 +369,7 @@ sup{
 
 .address {
     position: absolute; /* Центровка конрейнера*/
-    bottom: -1300px;
+    bottom: -1200px;
 
     padding: 49.5px 43.5px;
 
@@ -404,8 +405,6 @@ sup{
     justify-content:flex;
     align-items: center;
 }
-
-
 
 .social-list{
     margin-top: 48px;
