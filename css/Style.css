@@ -176,6 +176,11 @@ td{
     opacity: 0.2;
 }
 
+.navigation-item-selected > a{
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
 .navigation-backet{
     display: flex;
     align-items: center;
@@ -397,11 +402,10 @@ sup{
 
 /*------Футер-----------*/
 .social{
-    margin: 50px 0px;
+    margin: 50px 0px 20px 0px;
 
     display: flex;
     flex-direction: row;
-    justify-content:flex;
     align-items: center;
 }
 
@@ -416,6 +420,10 @@ sup{
     width: 270px;
 
     list-style:none;
+}
+
+.social-item > img{
+    margin: 10px;
 }
 
 .text-footer{
@@ -450,4 +458,58 @@ sup{
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+}
+
+.social-icon{
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e1e1e1;
+}
+.social-icon:hover{
+    background: #e74246;
+}
+.social-icon:focus{
+    background: #d7373b;
+    box-shadow: inset 0px 3px #c13135;
+    
+}
+
+.icon-cart-icon::before {
+    content: url("../img/svg/cart-icon.svg");
+    color: #fff;
+}
+.social-icon-fb::before {
+    content: url("../img/svg/fb-icon.svg");
+    color: #fff;
+}
+.social-icon-inst::before {
+    content: url("../img/svg/insta-icon.svg");
+    color: #fff;
+}
+.social-icon-vk::before {
+    content: url("../img/svg/vk-icon.svg");
+    color: #fff;
+}
+
+.social-icon-vk::before, .icon-cart-icon::before,
+.social-icon-fb::before, .social-icon-inst::before{
+    position: absolute;
+    left: 16px;
+    top: 22px;
+}
+.social-icon-fb::before{
+    left: 23px;
+    top: 18px;
+}
+.social-icon-inst:before{
+    left: 20px;
+    top: 20px;
+}
+.social-icon-fb:focus:before,
+.social-icon-inst:focus:before,
+.social-icon-vk:hover:before{
+    opacity: 0.3;
 }
