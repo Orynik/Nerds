@@ -402,7 +402,7 @@ sup{
 
 /*------Футер-----------*/
 .social{
-    margin: 50px 0px 20px 0px;
+    margin: 50px 0px 40px 0px;
 
     display: flex;
     flex-direction: row;
@@ -463,8 +463,8 @@ sup{
 .social-icon{
     position: relative;
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: #e1e1e1;
 }
@@ -497,17 +497,18 @@ sup{
 .social-icon-vk::before, .icon-cart-icon::before,
 .social-icon-fb::before, .social-icon-inst::before{
     position: absolute;
-    left: 16px;
-    top: 22px;
+    left: 25px;
+    top: 33px;
 }
 .social-icon-fb::before{
-    left: 23px;
-    top: 18px;
+    left: 33px;
+    top: 30px;
 }
 .social-icon-inst:before{
-    left: 20px;
-    top: 20px;
+    left: 28px;
+    top: 30px;
 }
+
 .social-icon-fb:focus:before,
 .social-icon-inst:focus:before,
 .social-icon-vk:hover:before{
