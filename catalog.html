@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин готовых шаблонов</title>
+</head>
+<body>
+    <header class = "main-header">
+        <div class = "wrapper">
+            <nav class = "main-navigation">
+                <ul class = "logo-list">
+                    <li class = "navigation-item navigation-main-logo">
+                        <a href = "#" class = "navigation-item main-logo">
+                            <img src = "img/svg/nerds-logo.svg" alt = "Логотип Nerd's" width = "160" height = "65">
+                        </a>
+                    </li>
+                </ul>
+                <ul class = "navigation-list">
+                    <li class = "navigation-item navigation-item-selected"><a href = "#">Студия</a></li>
+                    <li class = "navigation-item"><a href = "#">Клиенты</a></li>
+                    <li class = "navigation-item"><a href = "#">Магазин</a></li>
+                    <li class = "navigation-item"><a href = "#">Контакты</a></li>
+                </ul>
+                <ul class = "navigation-backet">
+                    <li class = "navigation-item navigation-backet"><a href = "#">Корзина</a></li>
+                </ul>
+            </nav>
+            <h1 class = "header-title">Магазин готовых шаблонов</h1>
+        </div>
+    </header>
+    <main>
+        <aside class = "form-sidebar">
+            <form method = "POST" action = "action.php">
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input type = "range"><br> <!--TO DO привязать к полям max min-->
+                    <label>ОТ
+                        <input type = "text" name = "min-value-range" id = "min-range" value = "0">
+                    </label>
+                    <label>ДО:
+                        <input type = "text" name = "max-value-range" id = "max-range" value = "15000">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <label>
+                        <input type = "radio" name = "grid" value = "adaptive">
+                        Адаптивная:<br>
+                    </label>
+                    <label>
+                        <input type = "radio" name = "grid" value = "fixed">
+                        Фиксированная:<br>
+                    </label>
+                    <label>
+                        <input type = "radio" name = "grid" value = "flex">
+                        Резиновая:
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <label>
+                        <input type = "checkbox" name = "feature" value = "slider">
+                        Слайдер<br>
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "feature" value = "block-of-features">
+                        Блок преимуществ<br>
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "feature" value = "news">
+                        Новости<br>
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "feature" value = "gallery">
+                        Галерея<br>
+                    </label>
+                    <label>
+                        <input type = "checkbox" name = "feature" value = "basket">
+                        Корзина<br>
+                    </label>
+                </fieldset>
+                <input type = "submit" value = "Показать">
+            </form>
+        </aside>
+        <section class = "ready template">
+            <h1 class = "visyally-hidden">Готовые шаблоны</h1>
+            <div class = "sorting">
+                <h2>Сортировать:</h2>
+                <ul class = "sotring-by">
+                    <li class="sorting-by-elements"><a href = "#">По цене</a></li>
+                    <li class="sorting-by-elements"><a href = "#">По типу</a></li>
+                    <li class="sorting-by-elements"><a href = "#">По названию</a></li>
+                </ul>
+            </div>
+            <div class = "template">
+                <ul class = "template-list">
+                    <li class="template-item">
+                        <img src="img/templates/sedona.jpg" alt="Макет Седона" width = "347" height = "575">
+                    </li>
+                    <li class="template-item">
+                        <img src = "img/templates/pink.jpg" alt = "Макет Пинк" width = "360" height = "576">
+                    </li>
+                    <li class="template-item">
+                        <img src = "img/templates/barbershop.jpg" alt = "Макет Барбершоп 'Бородинский' " width = "360" height = "576">
+                    </li>
+                    <li class="template-item">
+                        <img src = "img/templates/mishka.jpg" alt = "Макет Мишка" width = "360" height = "576">
+                    </li>
+                    <li class="template-item">
+                        <img src = "img/templates/aplus.jpg" alt = "Макет А+" width = "360" height = "576">
+                    </li>
+                    <li class="template-item">
+                        <img src = "img/templates/kvast.jpg" alt = "Макет Кваст" width = "360" height = "576">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <ul class = "breadcrumbs">
+            <li class="breadcrumbs-item breadcrumbs-select"><a href="#">1</a></li>
+            <li class="breadcrumbs-item"><a href="#">2</a></li>
+            <li class="breadcrumbs-item"><a href="#">3</a></li>
+            <li class="breadcrumbs-item breadcrumbs-next"><a href="#">Следующая</a></li>
+        </ul>
+        <section class = "our-location">
+                <div class = "wrapper">
+                    <h1 class = "visually-hidden">Контактные данные</h1>
+                    <div class = "address">
+                            <h2>NЁRDS DESIGN STUDIO</h2>
+                            <p>191186, Санкт-Питербург,<br>
+                            ул.Б. Конюшенная, д. 19/8</p>
+                            <p>тел. +7 (812) 275-75-75</p>
+                            <br>
+                            <button class = "modal-call button button-red">Напишите нам</button>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <div class = "wrapper">
+        <footer class = "main-footer">
+            <div class = "social">
+                <ul class = "social-list">
+                    <li class="social-item"><a class = "social-icon social-icon-vk" href="#"></a></li>
+                    <li class="social-item"><a class = "social-icon social-icon-fb" href="#"></a></li>
+                    <li class="social-item"><a class = "social-icon social-icon-inst" href="#"></a></li>
+                </ul>
+                <div class = "text-footer">
+                    <h4>Давайте дружить, это выгодно!</h4>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <section class = "modal-window visually-hidden">
+        <h2 class = "modal-title">Напишите нам</h2>
+        <form class = "modal-form" method = "post" action = "action.php">
+            <br><label>Ваше имя:
+                <input type = "text" placeholder = "Представьтесь, пожалуйста" id = "user-name">
+            </label>
+            <br><label>Ваш e-mail:
+                <input type = "email" placeholder = "Для отправки ответа" id = "user-email">
+            </label>
+            <br><label>Текст письма:
+                <input type = "text" placeholder = "В свободной форме" id = "user-text">
+            </label>
+        </form>
+    </section>
+</body>
+</html>
