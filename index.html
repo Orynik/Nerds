@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-    <header class = "main-header">
+    <div class="blur">
+        <header class = "main-header">
         <div class = "wrapper">
             <nav class = "main-navigation">
                 <ul class = "logo-list">
@@ -76,8 +77,8 @@
                 </div>
             </section>
         </div>
-    </header>
-    <main>
+        </header>
+        <main>
         <div class = "wrapper">
             <section class = "products-nerds">
                 <h1 class = "visually-hidden">Продукция</h1>
@@ -184,8 +185,8 @@
                     </div>
                 </div>
             </section>
-    </main>
-    <div class = "wrapper">
+        </main>
+        <div class = "wrapper">
         <footer class = "main-footer">
             <div class = "social">
                 <ul class = "social-list">
@@ -199,8 +200,9 @@
                 </div>
             </div>
         </footer>
+        </div>
     </div>
-    <section class = "modal-window visually-hidden">
+    <section class = "modal-window">
             <div class = "modal-wrapper">
                 <span class="close-cross"></span>
                 <h2 class = "modal-title">Напишите нам</h2>
@@ -212,7 +214,6 @@
                         <input type = "email" placeholder = "Для отправки ответа" id = "user-email">
                     </label>
                     <label>Текст письма:<br>
-                        <!-- <input type = "textarea" placeholder = "В свободной форме" id = "user-text"> -->
                         <textarea placeholder = "В свободной форме" id = "user-text"></textarea>
                     </label>
                 </form>

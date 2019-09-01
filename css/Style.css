@@ -632,17 +632,19 @@ sup{
 /*--------Модальное окно-----------*/
 
 .modal-window{
+    position: fixed; 
+    left: 240px;
+    top: 2600px;
     width: 960px;
     height: 590px;
     margin: 100px auto;
-    /* border: 2px solid #009966; */
+    background-color: #fff;
     box-shadow: 0 20px 30px rgba(0,0,0,0.5);
 }
 
 .modal-wrapper{
     position: relative;
 
-    
     padding-left: 84px;
     padding-right: 84px;
     padding-bottom: 100px;
