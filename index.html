@@ -201,19 +201,24 @@
         </footer>
     </div>
     <section class = "modal-window visually-hidden">
-        <h2 class = "modal-title">Напишите нам</h2>
-        <form class = "modal-form" method = "post" action = "action.php">
-            <br><label>Ваше имя:
-                <input type = "text" placeholder = "Представьтесь, пожалуйста" id = "user-name">
-            </label>
-            <br><label>Ваш e-mail:
-                <input type = "email" placeholder = "Для отправки ответа" id = "user-email">
-            </label>
-            <br><label>Текст письма:
-                <input type = "text" placeholder = "В свободной форме" id = "user-text">
-            </label>
-        </form>
-    </section>
+            <div class = "modal-wrapper">
+                <span class="close-cross"></span>
+                <h2 class = "modal-title">Напишите нам</h2>
+                <form id = "modal" class = "modal-form" method = "post" action = "action.php">
+                    <label>Ваше имя:<br>
+                        <input type = "text" placeholder = "Представьтесь, пожалуйста" id = "user-name">
+                    </label>
+                    <label>Ваш e-mail:<br>
+                        <input type = "email" placeholder = "Для отправки ответа" id = "user-email">
+                    </label>
+                    <label>Текст письма:<br>
+                        <!-- <input type = "textarea" placeholder = "В свободной форме" id = "user-text"> -->
+                        <textarea placeholder = "В свободной форме" id = "user-text"></textarea>
+                    </label>
+                </form>
+                <button class = "button button-red modal-button" type = "submit" form = "modal">Отправить</button>
+            </div>
+        </section>
     <script rel = "text/javascript" src = "JS/Script.JS"></script>
 </body>
 </html>

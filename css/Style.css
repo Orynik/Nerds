@@ -118,7 +118,6 @@ body{
     padding: 0px;
 
     font-family: 'Roboto','TimesNewRoman',sans-serif;
-
     background: #fff;
 }
 
@@ -629,3 +628,107 @@ sup{
 .social-icon-vk:focus:before{
     opacity: 0.3;
 }
+
+/*--------Модальное окно-----------*/
+
+.modal-window{
+    width: 960px;
+    height: 590px;
+    margin: 100px auto;
+    /* border: 2px solid #009966; */
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+
+.modal-wrapper{
+    position: relative;
+
+    
+    padding-left: 84px;
+    padding-right: 84px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+
+    box-sizing: border-box;
+}
+
+.modal-form{
+    width: 773px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal-form input{
+    width: 350px;
+    height: 45px;
+
+    margin-top: 10px;
+    padding-left: 14px;
+
+    border-radius: 3px;
+    border-color: #ccc;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+
+.modal-form label:nth-child(2){
+    margin-left: 73px;
+    margin-bottom: 30px;
+}
+
+.modal-form label:nth-child(3){
+    flex-grow: 1;
+}
+
+.modal-form label:nth-child(3) textarea{
+    width:100%;
+    height: 120px;
+
+    margin-top: 10px;
+    margin-bottom: 47px;
+    padding-left: 13px;
+    padding-top: 11px;
+
+    box-sizing: border-box;
+    border-radius: 3px;
+    
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+.modal-button{
+    font-family: inherit;
+    width: 260px;
+    font-weight: 600;
+}
+
+.close-cross{
+    position: absolute;
+    right: 95px;
+    top: 80px;
+
+    display: block;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url("../img/svg/close-cross.svg");
+
+    opacity: 0.3;
+
+    cursor: pointer;
+}
+
+.close-cross:hover{
+    opacity: 1;
+}
+
+.close-cross:active{
+    opacity: 0.1;
+}
+
