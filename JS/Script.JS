@@ -1,5 +1,5 @@
 "use strict";
-
+//Карусель
 // Передача основного класса основного окна и создание шаблона для расчета
 let slider = document.querySelector(".slider");
 let width_slide = 0;
@@ -35,4 +35,27 @@ function clearSelect(){
     radio_slide1.classList.remove("select");
     radio_slide2.classList.remove("select");
     radio_slide3.classList.remove("select");
+}
+
+
+//Модальное окно
+
+let modal_call = document.querySelector(".modal-call");
+let close_modal = document.querySelector(".close-cross");
+let modal_window = document.querySelector(".modal-window");
+let blur = document.querySelector(".blur");
+//Вызов окна
+modal_call.onclick = () =>{
+    modal_window.style.transition = "all 1s ease";
+    document.body.style.overflow = "hidden";
+    blur.style.transition = "all 1s ease";
+    blur.style.filter = "blur(3px)"
+    modal_window.style.top = "0";
+}
+
+close_modal.onclick = () =>{
+    modal_window.style.top = "2600px";
+    blur.style.filter = "";
+    document.body.style.overflow = "scroll";
+    modal_window.style.transition = "all 2s ease";
 }
