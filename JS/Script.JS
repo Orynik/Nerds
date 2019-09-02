@@ -82,7 +82,7 @@ function init(){
     //Добавление собственной марки на карту
     var myPlacemark = new ymaps.Placemark([59.938631, 30.323055] , {},
         {   iconLayout: 'default#image',
-            iconImageHref: 'https://raw.githubusercontent.com/Orynik/Nerds/APIMaps/img/index_products/map-marker.png',
+            iconImageHref: 'https://raw.githubusercontent.com/Orynik/Nerds/master/img/index_products/map-marker.png',
             iconImageSize: [367, 190],
             iconImageOffset: [-190, -185] });     
     myMap.geoObjects.add(myPlacemark);
