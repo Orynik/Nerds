@@ -479,6 +479,8 @@ sup{
 
 /*------Местоположение-------*/
 .our-location{
+    position: relative;
+
     margin-top: 70px;
 
     background-color: #fff;
@@ -503,7 +505,7 @@ sup{
 
 .address {
     position: absolute; /* Центровка конрейнера*/
-    top: 1850px;
+    top: 73px;
     z-index: 2;
 
     padding: 49.5px 43.5px;

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин готовых шаблонов</title>
+    <link rel="stylesheet" href = "css/style.css">
+    <!-- Скрипт YMAP -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f995437f-03a2-48ba-a815-92262155fffd&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header class = "main-header">
@@ -16,9 +19,9 @@
                     </li>
                 </ul>
                 <ul class = "navigation-list">
-                    <li class = "navigation-item navigation-item-selected"><a href = "#">Студия</a></li>
+                    <li class = "navigation-item"><a href = "index.html">Студия</a></li>
                     <li class = "navigation-item"><a href = "#">Клиенты</a></li>
-                    <li class = "navigation-item"><a href = "#">Магазин</a></li>
+                    <li class = "navigation-item navigation-item-selected"><a href = "#">Магазин</a></li>
                     <li class = "navigation-item"><a href = "#">Контакты</a></li>
                 </ul>
                 <ul class = "navigation-backet">
@@ -133,7 +136,8 @@
                             <button class = "modal-call button button-red">Напишите нам</button>
                     </div>
                 </div>
-            </section>
+            <div id="map"></div>
+        </section>
     </main>
     <div class = "wrapper">
         <footer class = "main-footer">
@@ -165,5 +169,6 @@
             </label>
         </form>
     </section>
+    <script type = "text/javascript" src = "JS/Map.js"></script>
 </body>
 </html>
