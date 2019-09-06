@@ -45,7 +45,7 @@ let close_modal = document.querySelector(".close-cross");
 let modal_window = document.querySelector(".modal-window");
 let blur = document.querySelector(".blur");
 //Вызов окна
-modal_call.onclick = () =>{
+modal_call.onclick = function(){
     modal_window.style.transition = "all 1s ease";
     document.body.style.overflow = "hidden";
     blur.style.transition = "all 1s ease";
@@ -53,7 +53,7 @@ modal_call.onclick = () =>{
     modal_window.style.top = "0";
 }
 
-close_modal.onclick = () =>{
+close_modal.onclick = function(){
     modal_window.style.top = "2600px";
     blur.style.filter = "";
     document.body.style.overflow = "scroll";

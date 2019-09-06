@@ -192,16 +192,25 @@ td{
 }
 
 .navigation-backet{
+    position: relative;
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: right;
-    width: 180px;
+}
+
+.navigation-backet::before{
+    content: "";
+
+    position: absolute;
+    left: -24px;
+
+    width: 15px;
+    height: 15px;
 
     background-image: url("../img/svg/cart-icon.svg");
     background-repeat: no-repeat;
-    background-position-y: 30px;
-    background-position-x: 65px;
 }
 
 .navigation-backet-item{
@@ -646,6 +655,35 @@ sup{
 .social-icon-inst:focus:before,
 .social-icon-vk:focus:before{
     opacity: 0.3;
+}
+
+/*-----Catalog.html------*/
+
+.header-title{
+    padding: 9px 0 110px 0;
+
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.wrapper-flex{
+    display: flex;
+}
+
+.form-sidebar{
+    width: 260px;   
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 /*--------Модальное окно-----------*/
