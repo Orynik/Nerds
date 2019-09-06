@@ -27,66 +27,51 @@ ul{
     padding: 0px;
 }
 
-:root{
-    --grey-text: #283136;
-    --red:#fb565a;
-    --green: #00cc66;
-    --yellow: #ffcc33;
-    --hover-red: #e74246;
-    --hover-green: #00bc6c;
-    --hover-yellow: #eab534;
-    --active-red: #d7373b;
-    --active-green: #00aa62;
-    --active-yellow: #e5a722;
-    --shadow-red: #c13135;
-    --shadow-green: #009966;
-    --shadow-yellow: #ce961f;
-}
 
 /*Состояния кнопок-ссылок*/
 .button-red{
-    background: var(--red);
+    background: #fb565a;
 }
 
 .button-green{
-    background: var(--green);
+    background: #00cc66;
 }
 
 .button-yellow{
-    background: var(--yellow);
+    background: #ffcc33;
 }
 
 .button-red:hover{
-    background: var(--hover-red);
+    background: #e74246;
 }
 
 .button-red:active{
     color: rgba(255,255,255,0.2);
 
-    background: var(--active-red);
-    box-shadow: inset 0px 3px var(--shadow-red);
+    background: #d7373b;
+    box-shadow: inset 0px 3px #c13135;
 }
 
 .button-green:hover{
-    background: var(--hover-green);
+    background: #00bc6c;
 }
 
 .button-green:active{
     color: rgba(255,255,255,0.2);
 
-    background: var(--active-green);
-    box-shadow: inset 0px 3px var(--shadow-green);
+    background: #00aa62;
+    box-shadow: inset 0px 3px #009966;
 }
 
 .button-yellow:hover{
-    background: var(--hover-yellow);
+    background: #eab534;
 }
 
 .button-yellow:active{
     color: rgba(255,255,255,0.2);
 
-    background: var(--active-yellow);
-    box-shadow: inset 0px 3px var(--shadow-yellow);
+    background: #e5a722;
+    box-shadow: inset 0px 3px #ce961f;
 }
 
 .button{
@@ -205,6 +190,7 @@ td{
 
     position: absolute;
     left: -24px;
+    top: 30px;
 
     width: 15px;
     height: 15px;
@@ -277,7 +263,7 @@ td{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--grey-text);
+    color: #283136;
 }
 
 
@@ -301,7 +287,6 @@ td{
     margin-left: 17px;
 
     background-color: #fff;
-    /* border: 2px solid #fb565a; */
     border-radius: 50%;
 
     cursor: pointer;
@@ -351,7 +336,7 @@ td{
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--grey-text);
+    color: #283136;
 }
 
 /*-----------------О нас------------------- */
@@ -387,7 +372,6 @@ td{
 }
 
 .order-type-list > h2{
-
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
@@ -402,7 +386,7 @@ td{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--grey-text);
+    color: #283136;
 }
 
 .order-type-item::before{
@@ -692,9 +676,12 @@ legend{
     position: fixed; 
     left: 240px;
     top: 2600px;
+    z-index: 5;
+
     width: 960px;
     height: 590px;
     margin: 100px auto;
+
     background-color: #fff;
     box-shadow: 0 20px 30px rgba(0,0,0,0.5);
 }
