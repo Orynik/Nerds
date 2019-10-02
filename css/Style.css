@@ -213,13 +213,16 @@ td{
 
 .slider{
     position: absolute;
-    display: flex; 
+    display: flex;
     height: 100%;
     width: 3480px;
     margin: 0;
-    transition: all 1s ease 0s;
-
     list-style: none;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
 }
 
 .slider-item{
@@ -652,16 +655,204 @@ sup{
     font-weight: 600;
 }
 
-.wrapper-flex{
+.sorting{
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.sorting h2{
+    text-transform: uppercase;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.sorting-by{
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.sorting-by-elements a{
+    text-decoration: none;
+    color: #000;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.ready-template{
+    width: 760px;
+}
+
+.wrapper-flex-catalog{
+    display: flex;
+}
+
+.wrapper-flex-template-catalog{
+    display: flex;
+    flex-direction: column;
+}
+
+.template-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.buttons-template{
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #e9e9e9;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.template-item{
+    position: relative;
+    margin-bottom: 33px;
+    border: 1px solid #e9e9e9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 360px;
+    height: 616px;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.template-describe{
+    position: absolute;
+    bottom: 0;
+    width: 360px;
+    height: 231px;
+    background: #eee;
+
+    opacity: 0;
+
+    transition:all 0.35s ease-in-out;
+    -webkit-transition:all 0.35s ease-in-out;
+    -moz-transition:all 0.35s ease-in-out;
+    -ms-transition:all 0.35s ease-in-out;
+    -o-transition:all 0.35s ease-in-out;
+}
+
+.button-buy-template{
+    display: inline-block;
+
+    width: 200px;
+}
+
+.template-discribe-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.template-discribe-wrapper h3{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.template-discribe-wrapper span{
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+
+    text-align: center
+}
+
+.template-item:hover .template-describe{
+    opacity: 1;
+}
+
+.template-item:hover{
+    box-shadow: 0px 6px 16px 1px RGBA(0,1,1,0.25);
+}
+
+.template-item:hover .buttons-template{
+    background: #4d4d4d; 
+}
+
+.buttons-template i{
+    position: absolute;
+    top: 13px;
+    left: 38px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.buttons-template i::before{
+    content: "";
+    position: absolute;
+    right: 24px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.buttons-template i::after{
+    content: "";
+    position: absolute;
+    left: 24px;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .form-sidebar{
     width: 260px;   
+    min-height: 780px;
 }
 
-fieldset{
+.form-sidebar fieldset{
     border: none;
+    margin:0;
+    padding: 0;
 }
 
 legend{
