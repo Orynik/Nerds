@@ -672,14 +672,21 @@ sup{
 
 .sorting-by-elements a{
     text-decoration: none;
-    color: #cacaca;
+    color: #000;
+    opacity: 0.3;
 
     font-size: 14px;
     line-height: 18px;
 }
 
-.active-sort a{
+.sorting-by-elements a:hover{
+    opacity: 0.6;
+}
+
+.active-sort a,
+.sorting-by-elements a:active{
     color: #000;
+    opacity: 1;
 }
 
 .sort-down{
@@ -690,7 +697,7 @@ sup{
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 15px solid #a6a6a6;
+	border-top: 15px solid RGBA(0,0,0,0.3);
 }
 
 .sort-up{
@@ -700,12 +707,18 @@ sup{
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-bottom: 15px solid #a6a6a6;
+	border-bottom: 15px solid RGBA(0,0,0,0.3);
 }
 
-.active-sort-order{
+.active-sort-order,
+.sort-up:active{
     border-bottom-color: #000000;
     border-top-color: #000000;
+}
+
+.sort-up:hover,
+.sort-down:hover{
+    border-bottom-color: rgba(0,0,0,0.6);
 }
 
 .ready-template{
@@ -1072,6 +1085,10 @@ legend{
     -o-border-radius: 5px;
 }
 
+.second-label{
+    margin-left: 25px;
+}
+
 /* Настройка бегунка в форме catalog.html */
 input[type=range] {
     -webkit-appearance: none;
@@ -1190,4 +1207,41 @@ input[type=range]::-ms-fill-lower {
 /*Fill upper Range before thumb */
 input[type=range]::-ms-fill-upper {
     background: #d7dcde;
+}
+
+.form-sidebar input[type = "text"]{
+    margin-left: 10px;
+    margin-top: 14px;
+
+    border: none;
+    height: 38px;
+    width: 80px;
+    background: #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-button{
+    margin-top: 48px;
+
+    height: 50px;
+    width: 260px;
+
+    color: #000;
+}
+
+.form-button:hover{
+    background: #dfdfdf;
+}
+
+.form-button:active{
+    box-shadow: inset 0 3px #bfbfbf;
+    background: #d5d5d5;
+    color: RGBA(0,0,0,0.3);
 }
