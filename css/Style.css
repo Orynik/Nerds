@@ -25,6 +25,7 @@
 
 ul{
     padding: 0px;
+    list-style: none;
 }
 
 
@@ -127,10 +128,6 @@ td{
     width: 100%;
 }
 
-.main-navigation > ul{
-    list-style: none;
-}
-
 .navigation-list{
     display: flex;
     flex-direction: row;
@@ -217,7 +214,6 @@ td{
     height: 100%;
     width: 3480px;
     margin: 0;
-    list-style: none;
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -324,8 +320,6 @@ td{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
-    list-style: none;
 }
 
 .product-item > h2{
@@ -368,10 +362,6 @@ td{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-}
-
-.order-type-list{
-    list-style: none;
 }
 
 .order-type-list > h2{
@@ -452,8 +442,6 @@ sup{
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-
-    list-style: none;
 }
 
 .partners-list > hr{ 
@@ -502,6 +490,7 @@ sup{
 .address {
     position: absolute; /* Центровка конрейнера*/
     top: 73px;
+    left: 112px;
     z-index: 2;
 
     padding: 49.5px 43.5px;
@@ -541,6 +530,7 @@ sup{
 .social-list{
     margin-top: 48px;
     margin-right: 0px;
+
 
     display: flex;
     align-items: center;
@@ -671,20 +661,44 @@ sup{
 
 .sorting-by{
     display: flex;
-    width: 300px;
+    width: 363px;
     flex-direction: row;
     justify-content: space-between;
 
-    list-style: none;
     text-transform: uppercase;
 }
 
 .sorting-by-elements a{
     text-decoration: none;
-    color: #000;
+    color: #cacaca;
 
     font-size: 14px;
     line-height: 18px;
+}
+
+.active-sort a{
+    color: #000;
+}
+
+.sort-up{
+    display: block;
+    margin-left: 48px;
+
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 15px solid #000;
+}
+
+.sort-down{
+    display: block;
+
+    width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 15px solid #000;
 }
 
 .ready-template{
@@ -705,7 +719,6 @@ sup{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style: none;
 }
 
 .buttons-template{
@@ -859,6 +872,77 @@ legend{
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+}
+
+.breadcrumbs{
+    display: flex;
+
+    width: 460px;
+}
+
+.breadcrumbs-item{
+    margin-right: 11px;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background: #eee;
+}
+
+.breadcrumbs-item:hover{
+    background: #dfdfdf;
+}
+
+.breadcrumbs-item:active{
+    box-shadow: inset 0px 3px #bfbfbf;
+    background: #d5d5d5;
+}
+
+.breadcrumbs-item:active a{
+    opacity: 0.3;
+}
+
+.breadcrumbs-next{
+    width: 257px;
+
+    text-transform: uppercase;
+}
+
+.breadcrumbs-item a{
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.breadcrumbs-select,
+.breadcrumbs-select:hover,
+.breadcrumbs-select:active{
+    box-sizing: content-box;
+
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 3px solid #eee;
+
+    cursor: default
+}
+
+.breadcrumbs-select a{
+    cursor: default;
+
+    padding-top: 12px;
+    padding-bottom: 14px;
 }
 
 /*--------Модальное окно-----------*/
