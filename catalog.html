@@ -38,7 +38,9 @@
                     <form class="form-sidebar" method = "POST" action = "action.php">
                         <fieldset>
                             <legend>Стоимость:</legend>
-                            <input type = "range"><br> <!--TO DO привязать к полям max min-->
+                            <div class = "range-div">
+                                <input type = "range"><br> <!--TO DO привязать к полям max min-->
+                            </div>
                             <label>ОТ
                                 <input type = "text" name = "min-value-range" id = "min-range" value = "0">
                             </label>
@@ -97,8 +99,8 @@
                                     <li class = "sorting-by-elements active-sort"><a href = "#">По цене</a></li>
                                     <li class = "sorting-by-elements"><a href = "#">По типу</a></li>
                                     <li class = "sorting-by-elements"><a href = "#">По названию</a></li>
-                                    <li><a class = "sort-up" href = "#"></a></li>
-                                    <li><a class = "sort-down"  href = "#"></a></li>
+                                    <li><a class = "sort-down active-sort-order" href = "#"></a></li>
+                                    <li><a class = "sort-up"  href = "#"></a></li>
                                 </ul>
                             </div>
                             <div class = "template">

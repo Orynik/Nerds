@@ -646,6 +646,8 @@ sup{
 }
 
 .sorting{
+    margin-bottom: 33px;
+
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -680,7 +682,7 @@ sup{
     color: #000;
 }
 
-.sort-up{
+.sort-down{
     display: block;
     margin-left: 48px;
 
@@ -688,17 +690,22 @@ sup{
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 15px solid #000;
+	border-top: 15px solid #a6a6a6;
 }
 
-.sort-down{
+.sort-up{
     display: block;
 
     width: 0;
 	height: 0;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-bottom: 15px solid #000;
+	border-bottom: 15px solid #a6a6a6;
+}
+
+.active-sort-order{
+    border-bottom-color: #000000;
+    border-top-color: #000000;
 }
 
 .ready-template{
@@ -707,6 +714,7 @@ sup{
 
 .wrapper-flex-catalog{
     display: flex;
+    justify-content: space-between;
 }
 
 .wrapper-flex-template-catalog{
@@ -1053,3 +1061,133 @@ legend{
     opacity: 0.1;
 }
 
+.range-div{
+    width: 260px;
+    height: 80px;
+    background: #eee;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Настройка бегунка в форме catalog.html */
+input[type=range] {
+    -webkit-appearance: none;
+    margin-left:20px;
+    margin-top: 22px;
+    width: 219px;
+    height: 40px;
+    background: #eee;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+/* Range' track в Chrome */
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: #d7dcde;
+    border-radius: 1.3px;
+}
+
+/* Range' thumb in Chrome*/
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 2.3px #cccdcd;
+    margin-top: -10px;
+    border: 8.3px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #ababab;
+    cursor: pointer;
+    /*Скрытие дефолтного слайдера */
+    -webkit-appearance: none;
+}
+
+/* Range' track in Mozilla*/
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: #d7dcde;
+    border-radius: 1.3px;
+}
+
+/* Range' thumb in Mozilla*/
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0 2.3px #cccdcd;
+    border: 9px solid #fff;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background: #ababab;
+    cursor: pointer;
+}
+
+/* Lower-fill for Mozilla */
+input[type="range"]::-moz-range-progress{
+    background: #00ca74;
+}
+
+/* Upper-fill for Mozilla  */
+input[type="range"]::-moz-range-track {
+    background: #d7dcde;
+}
+
+/* Range' track in ME*/
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    border-color: transparent;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    -webkit-animation: 0.2s;
+}
+
+/* Range' color setting for  lower in ME */
+input[type=range]::-ms-fill-lower {
+    background: #d7dcde;
+    border: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/* Range' color setting for upper in ME */
+input[type=range]::-ms-fill-upper {
+    background: #d7dcde;
+    border: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/* Range' thumb in ME*/
+input[type=range]::-ms-thumb {
+    margin-top: -1px;
+    box-shadow: 0 2.3px #cccdcd;
+    border: 9px solid #fff;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: #ababab;
+    cursor: pointer;
+}
+
+/*Fill upper Range before thumb */
+input[type=range]::-ms-fill-lower {
+    background: #00ca74;
+}
+
+/*Fill upper Range before thumb */
+input[type=range]::-ms-fill-upper {
+    background: #d7dcde;
+}
