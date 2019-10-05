@@ -1093,7 +1093,13 @@ legend{
 }
 
 .second-label{
-    margin-left: 25px;
+    margin-left: 22px;
+}
+
+input[type="text"]{
+    font-family: 'RobotoRegular','TimesNewRoman',sans-serif;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 /* Настройка бегунка в форме catalog.html */
@@ -1104,6 +1110,14 @@ input[type=range] {
     width: 219px;
     height: 40px;
     background: #eee;
+
+    margin-left:15px;
+    margin-top: 2px;
+    width: 225px;
+    height: 36px;
+
+    padding-top:  20px;
+    padding-bottom: 20px;
 }
 
 input[type=range]:focus {
@@ -1253,25 +1267,52 @@ input[type=range]::-ms-fill-upper {
     color: RGBA(0,0,0,0.3);
 }
 
-label.radio{
-    display: block;
-    height: 24px;
-    padding-bottom: 16px;
+.value{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.radio input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin: 10px 0 0 7px;
+.cost-label{
+    display: flex;
+    justify-content: space-between;
 }
+
+.first-label{
+    display: flex;
+    width: 115px;
+}
+
+.first-label span,
+.second-label span{
+    font-size: 16px;
+    line-height: 68px;
+}
+
+.first-label input{
+    order: 1;
+}
+
+.second-label{
+    display: flex;
+    width: 115px;
+}
+
+.second-label input{
+    order: 1;
+}
+
 .radio__text {
 	position: relative;
-    padding: 4.5px 0 0 40px;
+    padding: 0 0 0 40px;
     cursor: pointer;
     
     color: #283136;
     font-weight: 500;
+    height: 22px;
+    line-height: 26px;
+    font-weight: 500;
+
     transition: all ease-in-out 0.1s;
     -webkit-transition: all ease-in-out 0.1s;
     -moz-transition: all ease-in-out 0.1s;
@@ -1279,39 +1320,45 @@ label.radio{
     -o-transition: all ease-in-out 0.1s;
 }
 .radio__text:before {
-	content: '';
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 5px solid RGBA(77,77,77,0.4);
-	border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 5px solid RGBA(77,77,77,0.4);
+    border-radius: 50%;
     background: #FFF;
-    transition: all ease-in-out 0.1s;
-    -webkit-transition: all ease-in-out 0.1s;
-    -moz-transition: all ease-in-out 0.1s;
-    -ms-transition: all ease-in-out 0.1s;
-    -o-transition: all ease-in-out 0.1s;
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
 }
 .radio__text:after {
     content: '';
     position: absolute;
     top: 7px;
     left: 11px;
-    width: 9px;
-    height: 9px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: RGBA(77,77,77,0.4);
     opacity: 0;
-    transition: all ease-in-out 0.1s;
-    -webkit-transition: all ease-in-out 0.1s;
-    -moz-transition: all ease-in-out 0.1s;
-    -ms-transition: all ease-in-out 0.1s;
-    -o-transition: all ease-in-out 0.1s;
+    transform: scale(0);
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
 }
 .radio input:checked + .radio__text:after {
-	opacity: 1;
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 .radio input:hover + .radio__text:before{
     border-color: RGBA(77,77,77,1);
@@ -1338,6 +1385,19 @@ label.checkbox{
     margin-top: 17px;
 }
 
+.radio input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 7px;
+}
+
+label.radio{
+    display: block;
+    height: 24px;
+    padding-bottom: 16px;
+}
+
 .checkbox input {
 	position: absolute;
 	z-index: -1;
@@ -1347,7 +1407,11 @@ label.checkbox{
 .checkbox__text {
 	position: relative;
 	padding: 0 0 0 42px;
-	cursor: pointer;
+    cursor: pointer;
+    
+    height: 17px;
+    line-height: 11px;
+    font-weight: 500;
 }
 .checkbox__text:before {
     z-index: 0;
@@ -1355,9 +1419,9 @@ label.checkbox{
     content: '';
     position: absolute;
     top: -8px;
-    left: -2px;
-    width: 23px;
-    height: 23px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
     border: 3px solid RGBA(166,166,166,0.3);
     border-radius: 3px;
     background: #fff;
@@ -1367,13 +1431,11 @@ label.checkbox{
 
     content: '';
     position: absolute;
-    top: -7px;
-    left: 1px;
+    top: -8px;
+    left: 0px;
     width: 25px;
     height: 20px;
-    background: rgba(77, 77, 77,0.4);
-    -webkit-clip-path: polygon(45% 65%, 98% 0% , 105% 27%, 48% 102%, 0px 59%, 16% 36%);
-    clip-path: polygon(47% 66%, 100% -4% , 111% 16%, 45% 107%, 4px 71%, 28% 50%);
+    background: url("/img/svg/checkbox-on.svg");
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: transform .3s;
@@ -1384,10 +1446,6 @@ label.checkbox{
 }
 .checkbox input:hover + .checkbox__text::before {
 	border-color: RGBA(77, 77, 77,1);
-}
-
-.checkbox input:hover + .checkbox__text::after {
-	background: RGBA(77, 77, 77,1);
 }
 
 .checkbox input:checked + .checkbox__text::after {
