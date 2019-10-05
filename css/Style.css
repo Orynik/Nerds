@@ -1435,7 +1435,7 @@ label.radio{
     left: 0px;
     width: 25px;
     height: 20px;
-    background: url("/img/svg/checkbox-on.svg");
+    background: url("../img/svg/checkbox-on.svg");
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: transform .3s;
