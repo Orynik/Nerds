@@ -22,6 +22,7 @@
 
 ul{
     padding: 0px;
+
     list-style: none;
 }
 
@@ -47,6 +48,7 @@ ul{
     color: rgba(255,255,255,0.2);
 
     background: #d7373b;
+
     box-shadow: inset 0px 3px #c13135;
 }
 
@@ -58,6 +60,7 @@ ul{
     color: rgba(255,255,255,0.2);
 
     background: #00aa62;
+
     box-shadow: inset 0px 3px #009966;
 }
 
@@ -69,14 +72,15 @@ ul{
     color: rgba(255,255,255,0.2);
 
     background: #e5a722;
+
     box-shadow: inset 0px 3px #ce961f;
 }
 
 .button{
     display: inline-block;
-
+    width: 160px;
+    height: 50px;
     border: none;
-    border-radius: 4px;
 
     font-size: 16px;
     line-height: 18px;
@@ -85,8 +89,7 @@ ul{
     text-transform: uppercase;
     text-align: center;
 
-    width: 160px;
-    height: 50px;
+    border-radius: 4px;
 
     cursor: pointer;
 }
@@ -101,6 +104,7 @@ body{
     padding: 0px;
 
     font-family: 'RobotoRegular','TimesNewRoman',sans-serif;
+
     background: #fff;
 }
 
@@ -131,7 +135,6 @@ td{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    
     width: 560px;
 }
 
@@ -163,12 +166,13 @@ td{
 
 .navigation-item > a:active{
     color: #000;
+
     opacity: 0.2;
 }
 
 .navigation-item-selected > a{
-    border-bottom: 2px solid red;
     padding-bottom: 10px;
+    border-bottom: 2px solid red;
 }
 
 .navigation-backet{
@@ -201,17 +205,21 @@ td{
 /*-----------------Слайдер------------------- */
 
 .slider-advantages{
-    overflow: hidden;
-    height: 415px;
     position: relative;
+
+    height: 415px;
+
+    overflow: hidden;
 }   
 
 .slider{
     position: absolute;
+
     display: flex;
+    margin: 0;
     height: 100%;
     width: 3480px;
-    margin: 0;
+
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -222,35 +230,39 @@ td{
 .slider-item{
     display: block;
     flex-shrink: 0;
-
     width: 1200px;
     height: 415px;
+
     transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
 }
 
-.slide-1{
-    background-image: url("../img/index_products/slide1.png"); 
+.slide-1,
+.slide-2,
+.slide-3{
     background-repeat: no-repeat;
     background-position-x: right;   
 }
 
+.slide-1{
+    background-image: url("../img/index_products/slide1.png");  
+}
+
 .slide-2{
     background-image: url("../img/index_products/slide2.png"); 
-    background-repeat: no-repeat;
-    background-position-x: right;
 }
 
 .slide-3{
     background-image: url("../img/index_products/slide3.png"); 
-    background-repeat: no-repeat;
-    background-position-x: right;
 }
 
 .slider-advantage-title{
     font-size: 55px;
-    line-height:60px;
+    line-height: 60px;
     font-weight: 600;
-
     color: #000;
 
     text-decoration: none;
@@ -266,22 +278,20 @@ td{
 
 .control-panel{
     position: absolute;
-    display: flex;
-
     bottom: 90px;
-    left: 45%;     
+    left: 45%;    
+
+    display: flex; 
 }
 
 .slide-button{
-    width: 18px;
-    height: 18px;
-
     position: relative;
     z-index: 2;
-
+    
     display: inline-flex;
-
     margin-left: 17px;
+    width: 18px;
+    height: 18px;
 
     background-color: #fff;
     border-radius: 50%;
@@ -299,6 +309,7 @@ td{
     width: 4px;
     height: 4px;
     border: 2px solid #ccc;
+
     border-radius: 20px; 
     background-color: #fff;
 }
@@ -308,16 +319,15 @@ td{
     height: 50px;
 }
 
-/*-----------------------Продукция--------------*/
+/*---------------Продукция--------------*/
 
 .product-list{
-    margin-top: 80px;
-    margin-bottom: 80px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .product-item > h2{
@@ -334,24 +344,22 @@ td{
     color: #283136;
 }
 
-/*-----------------О нас------------------- */
+/*---------------О нас-------------- */
 .about-us{
-    padding-top: 10px;
-    padding-bottom: 50px;
-
     display: flex;
     justify-content: space-between;
     width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
 .summary{
-    padding-right: 20px;
-
     width: 660px;
+    padding-right: 20px;
 }
 
 .summary > h3{
-    font-size:40px;
+    font-size: 40px;
     line-height: 45px;
     font-weight: 600;
 }
@@ -366,12 +374,13 @@ td{
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
-    text-transform: uppercase;
     color:#000;
+    text-transform: uppercase;
 }
 
 .order-type-item{
     position: relative;
+
     margin-left: 37px;
 
     font-size: 16px;
@@ -388,13 +397,12 @@ td{
     top: 23px;
 
     display: block;
-
-    height: 2px;
     width: 25px;
+    height: 2px;
 
     background-image: url("../img/index_products/list-style-img.jpg");
     background-repeat: no-repeat;
-    background-position: 0px 0;
+    background-position: 0 0;
 }
 /*---------------Статистика--------------------*/
 
@@ -403,14 +411,13 @@ td{
 }
 
 .statistic{
-    padding-left: 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
 }
 
-.statistic > caption > h4{
+.statistic-title{
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -418,33 +425,32 @@ td{
 }
 
 .procent{
-    font-size:45px;
+    font-size: 45px;
     font-weight: 700;
 }
 
 sup{
-    font-size:25px;
+    font-size: 25px;
 }
 
 .lvl{
-    font-size:16px;
+    font-size: 16px;
     line-height: 18px;
 }
 
 /*-------------Партнеры----------------------*/
 
 .partners-list{
-    padding-top: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 10px;
 }
 
 .partners-list > hr{ 
-    margin: auto;
     height: 52px;
+    margin: auto;
 }
 
 .partners-item{
@@ -460,34 +466,38 @@ sup{
 }
 
 /*------Местоположение-------*/
+
 .our-location{
     position: relative;
 
+    height: 420px;
     margin-top: 70px;
 
     background-color: #fff;
-    /* background-image: url(../img/index_products/map.jpg); */
-    height: 420px;
 }
 
 #map{
+    position: relative;
+    z-index: 1;
+
     width: 100%;
     height: 100%;
-    z-index: 1;
 }
 
-.map-marker{
+.map-pointer{
     position: absolute;
-    bottom: 0;
-    background-image: url("../img/index_products/map-marker.png");
+    top: 81px;
+    left: 600px;
 
     width: 350px;
     height: 190px;
+
+    background-image: url("../img/index_products/map-marker.png");
 }
 
 .address {
-    position: absolute; /* Центровка конрейнера*/
-    top: 73px;
+    position: absolute; 
+    top: 59px;
     left: 112px;
     z-index: 2;
 
@@ -516,25 +526,22 @@ sup{
     width: 200px;
 }
 
-/*------Футер-----------*/
+/*-----------Футер-----------*/
 .social{
-    margin: 50px 0px 40px 0px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 50px 0px 40px 0px;
 }
 
 .social-list{
-    margin-top: 48px;
-    margin-right: 0px;
-
-
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
     width: 270px;
+    margin-top: 48px;
+    margin-right: 0px;
 
     list-style:none;
 }
@@ -551,11 +558,11 @@ sup{
 .text-footer > h4{
     margin-bottom: 0px;
 
+    font-family: "RobotoBold";
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     text-transform: capitalize;
-    font-family: "RobotoBold";
 }
 
 .text-footer > p{
@@ -583,6 +590,7 @@ sup{
     float: left;
     width: 80px;
     height: 80px;
+
     border-radius: 50%;
     background: #e1e1e1;
 }
@@ -592,23 +600,26 @@ sup{
 .social-icon:focus{
     background: #d7373b;
     box-shadow: inset 0px 3px #c13135;
-    
 }
 
 .icon-cart-icon::before {
     content: url("../img/svg/cart-icon.svg");
+
     color: #fff;
 }
 .social-icon-fb::before {
     content: url("../img/svg/fb-icon.svg");
+
     color: #fff;
 }
 .social-icon-inst::before {
     content: url("../img/svg/insta-icon.svg");
+
     color: #fff;
 }
 .social-icon-vk::before {
     content: url("../img/svg/vk-icon.svg");
+
     color: #fff;
 }
 
@@ -633,50 +644,48 @@ sup{
     opacity: 0.3;
 }
 
-/*-----Catalog.html------*/
+/*------Catalog.html------*/
 
 .header-title{
     padding: 9px 0 110px 0;
 
-    text-align: center;
+    font-family: "RobotoMedium";
     font-size: 50px;
     line-height: 50px;
     font-weight: 600;
-    font-family: "RobotoMedium";
+    text-align: center;
 }
 
 .sorting{
-    margin-bottom: 33px;
-
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 33px;
 }
 
 .sorting h2{
-    text-transform: uppercase;
-
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .sorting-by{
     display: flex;
-    width: 363px;
     flex-direction: row;
     justify-content: space-between;
+    width: 363px;
 
     text-transform: uppercase;
 }
 
 .sorting-by-elements a{
-    text-decoration: none;
-    color: #000;
-    opacity: 0.3;
-
     font-size: 14px;
-    line-height: 18px;
+    line-height: 18px;    
+    color: #000;
+    
+    text-decoration: none;
+    opacity: 0.3;
 }
 
 .sorting-by-elements a:hover{
@@ -686,34 +695,33 @@ sup{
 .active-sort a,
 .sorting-by-elements a:active{
     color: #000;
+
     opacity: 1;
 }
 
 .sort-down{
     display: block;
-    margin-left: 48px;
-
     width: 0;
-	height: 0;
+    height: 0;
+    border-top: 15px solid RGBA(0,0,0,0.3);
+    border-right: 8px solid transparent;
 	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-top: 15px solid RGBA(0,0,0,0.3);
+    margin-left: 48px;
 }
 
 .sort-up{
     display: block;
-
     width: 0;
 	height: 0;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid RGBA(0,0,0,0.3);
 	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-bottom: 15px solid RGBA(0,0,0,0.3);
 }
 
 .active-sort-order,
 .sort-up:active{
-    border-bottom-color: #000000;
     border-top-color: #000000;
+    border-bottom-color: #000000;
 }
 
 .sort-up:hover,
@@ -744,12 +752,15 @@ sup{
 
 .buttons-template{
     position: relative;
+
     display: block;
     width: 360px;
     height: 40px;
-    border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+
     background: #e9e9e9;
+
     transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -759,12 +770,14 @@ sup{
 
 .template-item{
     position: relative;
-    margin-bottom: 33px;
+
+    width: 360px;
+    height: 616px;
     border: 1px solid #e9e9e9;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    width: 360px;
-    height: 616px;
+    margin-bottom: 33px;
+
     transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -775,10 +788,11 @@ sup{
 .template-describe{
     position: absolute;
     bottom: 0;
+
     width: 360px;
     height: 231px;
-    background: #eee;
 
+    background: #eee;
     opacity: 0;
 
     transition:all 0.35s ease-in-out;
@@ -790,7 +804,6 @@ sup{
 
 .button-buy-template{
     display: inline-block;
-
     width: 200px;
 }
 
@@ -813,8 +826,7 @@ sup{
     font-size: 16px;
     line-height: 18px;
     font-weight: 300;
-
-    text-align: center
+    text-align: center;
 }
 
 .template-item:hover .template-describe{
@@ -837,12 +849,9 @@ sup{
     display: block;
     width: 14px;
     height: 14px;
-    background: #fff;
+
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    background: #fff;
 }
 
 .buttons-template i::before{
@@ -853,29 +862,24 @@ sup{
     display: block;
     width: 14px;
     height: 14px;
+
     background: #fff;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 
 .buttons-template i::after{
     content: "";
+
     position: absolute;
     left: 24px;
 
     display: block;
     width: 14px;
     height: 14px;
+
     background: #fff;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .form-sidebar{
@@ -885,7 +889,7 @@ sup{
 
 .form-sidebar fieldset{
     border: none;
-    padding:0;
+    padding: 0;
 }
 
 .form-sidebar fieldset:first-child{
@@ -904,19 +908,15 @@ legend{
 
 .breadcrumbs{
     display: flex;
-
     width: 460px;
 }
 
 .breadcrumbs-item{
-    margin-right: 11px;
     width: 50px;
     height: 50px;
+    margin-right: 11px;
+
     border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
     background: #eee;
 }
 
@@ -944,33 +944,34 @@ legend{
     margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: center;
 
-    text-decoration: none;
     font-size: 16px;
     line-height: 18px;
     font-weight: 600;
     color: #000;
+    text-align: center;
+
+    text-decoration: none;
 }
 
 .breadcrumbs-select,
 .breadcrumbs-select:hover,
 .breadcrumbs-select:active{
     box-sizing: content-box;
-
     width: 44px;
     height: 44px;
-    background: #fff;
     border: 3px solid #eee;
+    
+    background: #fff;
 
     cursor: default
 }
 
 .breadcrumbs-select a{
-    cursor: default;
-
     padding-top: 12px;
     padding-bottom: 14px;
+
+    cursor: default;
 }
 
 /*--------Модальное окно-----------*/
@@ -990,43 +991,39 @@ legend{
 }
 
 .modal-wrapper{
-    position: relative;
-
-    padding-left: 84px;
-    padding-right: 84px;
-    padding-bottom: 100px;
-    padding-top: 20px;
-
     box-sizing: border-box;
+    position: relative;
+    
+    padding: 20px 84px 100px 84px;
 }
 
 .modal-form{
-    width: 773px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 773px;
 }
 
 .modal-form input{
+    box-sizing: border-box;
     width: 350px;
     height: 45px;
-
     margin-top: 10px;
     padding-left: 14px;
 
     border-radius: 3px;
     border-color: #ccc;
-    box-sizing: border-box;
 
-    font-family: inherit;
+    font-family: "RobotoRegular";
     font-size: 16px;
     line-height: 18px;
+
     opacity: 0.5;
 }
 
 .modal-form label:nth-child(2){
-    margin-left: 73px;
     margin-bottom: 30px;
+    margin-left: 73px;
 }
 
 .modal-form label:nth-child(3){
@@ -1034,20 +1031,20 @@ legend{
 }
 
 .modal-form label:nth-child(3) textarea{
-    width:100%;
+    box-sizing: border-box;
+    width: 100%;
     height: 120px;
-
     margin-top: 10px;
     margin-bottom: 47px;
-    padding-left: 13px;
     padding-top: 11px;
+    padding-left: 13px;
 
-    box-sizing: border-box;
     border-radius: 3px;
     
-    font-family: inherit;
+    font-family: "RobotoRegular";
     font-size: 16px;
     line-height: 18px;
+
     opacity: 0.5;
 }
 .modal-button{
@@ -1062,14 +1059,11 @@ legend{
     top: 80px;
 
     display: block;
-
     width: 21px;
     height: 21px;
 
     background-image: url("../img/svg/close-cross.svg");
-
     opacity: 0.3;
-
     cursor: pointer;
 }
 
@@ -1084,19 +1078,16 @@ legend{
 .range-div{
     width: 260px;
     height: 80px;
+
     background: #eee;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 
 .second-label{
     margin-left: 22px;
 }
 
-input[type="text"]{
+input[type="number"]{
     font-family: 'RobotoRegular','TimesNewRoman',sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -1105,19 +1096,14 @@ input[type="text"]{
 /* Настройка бегунка в форме catalog.html */
 input[type=range] {
     -webkit-appearance: none;
-    margin-left:20px;
-    margin-top: 22px;
-    width: 219px;
-    height: 40px;
-    background: #eee;
-
-    margin-left:15px;
-    margin-top: 2px;
     width: 225px;
     height: 36px;
-
-    padding-top:  20px;
+    margin-top: 2px;
+    margin-left: 15px;
+    padding-top: 20px;
     padding-bottom: 20px;
+
+    background: #eee;
 }
 
 input[type=range]:focus {
@@ -1127,22 +1113,26 @@ input[type=range]:focus {
 input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
-    cursor: pointer;
+    
     animation: 0.2s;
+
     background: #d7dcde;
     border-radius: 1.3px;
+    cursor: pointer;
 }
 
 /* Range' thumb in Chrome*/
 input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0 2.3px #cccdcd;
-    margin-top: -10px;
-    border: 8.3px solid #fff;
-    height: 20px;
     width: 20px;
+    height: 20px;
+    border: 8.3px solid #fff;
+    margin-top: -10px;
+
     border-radius: 50%;
     background: #ababab;
+    box-shadow: 0 2.3px #cccdcd;
     cursor: pointer;
+
     /*Скрытие дефолтного слайдера */
     -webkit-appearance: none;
 }
@@ -1151,21 +1141,24 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]::-moz-range-track {
     width: 100%;
     height: 2px;
-    cursor: pointer;
+
     animation: 0.2s;
+
     background: #d7dcde;
     border-radius: 1.3px;
+    cursor: pointer;
 }
 
 /* Range' thumb in Mozilla*/
 input[type=range]::-moz-range-thumb {
-    box-shadow: 0 2.3px #cccdcd;
-    border: 9px solid #fff;
-    height: 3px;
     width: 3px;
+    height: 3px;
+    border: 9px solid #fff;
+
     border-radius: 50%;
     background: #ababab;
     cursor: pointer;
+    box-shadow: 0 2.3px #cccdcd;
 }
 
 /* Lower-fill for Mozilla */
@@ -1183,41 +1176,46 @@ input[type=range]::-ms-track {
     width: 100%;
     height: 2px;
     border-color: transparent;
-    cursor: pointer;
-    animation: 0.2s;
-    background: transparent;
-    border-color: transparent;
     border-width: 16px 0;
+
     color: transparent;
+
+    animation: 0.2s;
     -webkit-animation: 0.2s;
+
+    background: transparent;
+    cursor: pointer;
 }
 
 /* Range' color setting for  lower in ME */
 input[type=range]::-ms-fill-lower {
-    background: #d7dcde;
     border: none;
+    
     border-color: transparent;
+    background: #d7dcde;
     box-shadow: none;
 }
 
 /* Range' color setting for upper in ME */
 input[type=range]::-ms-fill-upper {
-    background: #d7dcde;
     border: none;
     border-color: transparent;
+
+    background: #d7dcde;
     box-shadow: none;
 }
 
 /* Range' thumb in ME*/
 input[type=range]::-ms-thumb {
-    margin-top: -1px;
-    box-shadow: 0 2.3px #cccdcd;
-    border: 9px solid #fff;
-    height: 4px;
     width: 4px;
+    height: 4px;
+    margin-top: -1px;
+    border: 9px solid #fff;
+
     border-radius: 50%;
     background: #ababab;
     cursor: pointer;
+    box-shadow: 0 2.3px #cccdcd;
 }
 
 /*Fill upper Range before thumb */
@@ -1230,29 +1228,33 @@ input[type=range]::-ms-fill-upper {
     background: #d7dcde;
 }
 
-.form-sidebar input[type = "text"]{
-    margin-left: 10px;
-    margin-top: 14px;
-
-    border: none;
-    height: 38px;
+.form-sidebar input[type = "number"]{
     width: 80px;
-    background: #eee;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    height: 38px;
+    border: none;
+    margin-top: 14px;
+    margin-left: 10px;
 
     font-size: 16px;
     text-align: center;
+    
+    background: #eee;
+    border-radius: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
 }
 
 .form-button{
-    margin-top: 48px;
-
-    height: 50px;
     width: 260px;
+    height: 50px;
+    margin-top: 48px;
 
     color: #000;
 }
@@ -1262,9 +1264,10 @@ input[type=range]::-ms-fill-upper {
 }
 
 .form-button:active{
-    box-shadow: inset 0 3px #bfbfbf;
-    background: #d5d5d5;
     color: RGBA(0,0,0,0.3);
+    
+    background: #d5d5d5;
+    box-shadow: inset 0 3px #bfbfbf;
 }
 
 .value{
@@ -1304,61 +1307,77 @@ input[type=range]::-ms-fill-upper {
 
 .radio__text {
 	position: relative;
-    padding: 0 0 0 40px;
-    cursor: pointer;
-    
-    color: #283136;
-    font-weight: 500;
+
     height: 22px;
+    padding: 0 0 0 40px;
+    
+    font-weight: 500;
     line-height: 26px;
     font-weight: 500;
+    color: #283136;
 
     transition: all ease-in-out 0.1s;
     -webkit-transition: all ease-in-out 0.1s;
     -moz-transition: all ease-in-out 0.1s;
     -ms-transition: all ease-in-out 0.1s;
     -o-transition: all ease-in-out 0.1s;
+
+    cursor: pointer;
 }
 .radio__text:before {
     content: '';
+
     position: absolute;
     top: -3px;
     left: 0;
+
     width: 18px;
     height: 18px;
     border: 5px solid RGBA(77,77,77,0.4);
-    border-radius: 50%;
-    background: #FFF;
+
     transition: all ease-in-out 0.2s;
     -webkit-transition: all ease-in-out 0.2s;
     -moz-transition: all ease-in-out 0.2s;
     -ms-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
+
+    border-radius: 50%;
+    background: #FFF;
 }
 .radio__text:after {
     content: '';
+
     position: absolute;
     top: 7px;
     left: 11px;
+
     width: 7px;
     height: 7px;
-    border-radius: 50%;
-    background: RGBA(77,77,77,0.4);
-    opacity: 0;
+
     transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+
     transition: all ease-in-out 0.2s;
     -webkit-transition: all ease-in-out 0.2s;
     -moz-transition: all ease-in-out 0.2s;
     -ms-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
+    
+    border-radius: 50%;
+    background: RGBA(77,77,77,0.4);
+    opacity: 0;
 }
 .radio input:checked + .radio__text:after {
-    opacity: 1;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+
+    opacity: 1;
 }
 .radio input:hover + .radio__text:before{
     border-color: RGBA(77,77,77,1);
@@ -1388,8 +1407,10 @@ label.checkbox{
 .radio input {
 	position: absolute;
 	z-index: -1;
-	opacity: 0;
+
 	margin: 10px 0 0 7px;
+
+    opacity: 0;
 }
 
 label.radio{
@@ -1401,45 +1422,57 @@ label.radio{
 .checkbox input {
 	position: absolute;
 	z-index: -1;
-	opacity: 0;
+
 	margin: 10px 0 0 20px;
+
+    opacity: 0;
 }
 .checkbox__text {
 	position: relative;
+
 	padding: 0 0 0 42px;
-    cursor: pointer;
     
     height: 17px;
     line-height: 11px;
     font-weight: 500;
+
+    cursor: pointer;
 }
 .checkbox__text:before {
-    z-index: 0;
-
     content: '';
+
     position: absolute;
     top: -8px;
     left: 0px;
+    z-index: 0;
+
     width: 18px;
     height: 18px;
     border: 3px solid RGBA(166,166,166,0.3);
+
     border-radius: 3px;
     background: #fff;
 }
 .checkbox__text:after {
-    z-index: 3;
-
     content: '';
+
     position: absolute;
     top: -8px;
     left: 0px;
+    z-index: 3;
+
     width: 25px;
     height: 20px;
+
     background: url("../img/svg/checkbox-on.svg");
-    -webkit-transform: scale(0);
+    
     transform: scale(0);
-    -webkit-transition: transform .3s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
     transition: transform .3s;
+    -webkit-transition: transform .3s;
     -moz-transition: transform .3s;
     -ms-transition: transform .3s;
     -o-transition: transform .3s;
@@ -1449,8 +1482,11 @@ label.radio{
 }
 
 .checkbox input:checked + .checkbox__text::after {
-    -webkit-transform: scale(1);
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
 .checkbox input:disabled + .checkbox__text {

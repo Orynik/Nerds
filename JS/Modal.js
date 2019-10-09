@@ -1,4 +1,4 @@
-"use sctict";
+"use scrict";
 //Модальное окно
 // Проверка, является ли браузер IE
 let ChechedBrowser = function(){
@@ -35,3 +35,4 @@ close_modal.onclick = function(){
     document.body.style.overflow = "scroll";
     modal_window.style.transition = "all 2s ease";
 }
+
