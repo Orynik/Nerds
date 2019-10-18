@@ -150,7 +150,7 @@ td{
     justify-content: left;
 }
 
-.navigation-item > a{
+.navigation-item a{
     font-size: 16px;
     line-height:30px;
     font-weight: 400;
@@ -160,14 +160,23 @@ td{
     text-decoration: none;
 }
 
-.navigation-item > a:hover{
+.navigation-item a:hover{
     color: #fb565a;
 }
 
-.navigation-item > a:active{
+.navigation-item a:active{
     color: #000;
 
     opacity: 0.2;
+}
+
+.navigation-item-disabled a,
+.navigation-item-disabled a:hover,
+.navigation-item-disabled a:active{
+    color: #000;
+
+    opacity: 0.4;
+    cursor: default;
 }
 
 .navigation-item-selected > a{
